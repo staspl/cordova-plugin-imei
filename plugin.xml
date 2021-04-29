@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
            id="com.plugin.imei"
-      version="0.0.1">
+      version="0.0.2">
 
     <name>IMEI</name>
     <description>IMEI plugin for Android</description>
@@ -21,10 +21,15 @@
             </feature>
         </config-file>
 
+      <!--
         <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
             <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
         </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+      -->
 
 
         <source-file src="src/android/IMEIPlugin.java" target-dir="src/com/plugin/IMEI" />
